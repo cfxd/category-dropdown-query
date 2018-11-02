@@ -1,4 +1,7 @@
- <form action="" method="post">
+ <?php
+   $cat_terms = get_terms(array('taxonomy' => 'category'));
+ ?>
+<form action="" method="post">
         	<select name="before_and_after" id="blog-cat-menu">
         	    <option value="all-cat" selected><?php _e('All Categories'); ?></option>
               <?php foreach($cat_terms as $t) : ?>
