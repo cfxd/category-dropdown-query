@@ -38,3 +38,4 @@
     			<?php endwhile ?>
     		</ul>
     	<?php endif ?>
+</div>
