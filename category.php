@@ -53,7 +53,7 @@ extract($fp_options);
     	?>
     	
     		<ul class="my-blogs">
-    			<?php while ( $my_posts->have_posts() ) : $my_posts->the_post() ?>	
+    			<?php while ( have_posts() ) : the_post(); ?>	
           	<li class="blog-box">
           	  <a class="box_link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
         			  <div class="blog-bullet-img">
